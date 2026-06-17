@@ -19,18 +19,19 @@
 - **аудит-лог** всех обращений в SQLite
 
 ---
-## Business Value
+
+## Польза для бизнеса
 
 Сервис позволяет:
-
 - сократить время первичной обработки обращений;
-- автоматически маршрутизировать запросы;
+- автоматически маршрутизировать запросы по категориям;
 - ускорить работу поддержки;
 - снизить риск потери обращений;
 - собирать историю для последующего анализа качества.
 
+---
 
-## Request Flow
+## Архитектура
 
 ```text
 Client Request
@@ -65,30 +66,7 @@ SQLite Audit Log
       │
       ▼
 JSON Response
-``` 
-
----
-
-
-
-## Демо
-
-🎥 [Демо-видео: запрос → ответ → запись в БД](ССЫЛКА_НА_ВИДЕО)
-
-**Billing — двойное списание**
-![Billing запрос](docs/screenshots/swagger_billing.png)
-
-**Support — не могу войти в аккаунт**
-![Support запрос](docs/screenshots/swagger_support.png)
-
-**Complaint — жалоба на сервис**
-![Complaint запрос](docs/screenshots/swagger_complaint.png)
-
-**Запись в базе данных**
-![Запись в БД](docs/screenshots/db_record.png)
-
-**Rate limit — 11-й запрос возвращает 429**
-![Rate limit 429](docs/screenshots/rate_limit.png)
+```
 
 ---
 
@@ -196,6 +174,27 @@ docker compose up --build
 - **Fallback:** при любой ошибке LLM → `escalate=true`, `draft_reply` = шаблон «передано оператору»
 - **Секреты:** только через `.env`, ключи не хранятся в коде
 - **Логирование:** каждый тикет логируется в stdout с уровнем INFO
+
+---
+
+## Демо
+
+🎥 [Демо-видео: запрос → ответ → запись в БД](ССЫЛКА_НА_ВИДЕО)
+
+**Billing — двойное списание**
+![Billing запрос](docs/screenshots/swagger_billing.png)
+
+**Support — не могу войти в аккаунт**
+![Support запрос](docs/screenshots/swagger_support.png)
+
+**Complaint — жалоба на сервис**
+![Complaint запрос](docs/screenshots/swagger_complaint.png)
+
+**Запись в базе данных**
+![Запись в БД](docs/screenshots/db_record.png)
+
+**Rate limit — 11-й запрос возвращает 429**
+![Rate limit 429](docs/screenshots/rate_limit.png)
 
 ---
 
