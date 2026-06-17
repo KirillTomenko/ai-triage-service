@@ -72,15 +72,20 @@ JSON Response
 
 ---
 
+
+
 ## Демо
 
 🎥 [Демо-видео: запрос → ответ → запись в БД](ССЫЛКА_НА_ВИДЕО)
 
-**Запрос в Swagger UI**
-![Запрос в Swagger](docs/screenshots/swagger_request.png)
+**Billing — двойное списание**
+![Billing запрос](docs/screenshots/swagger_billing.png)
 
-**Ответ сервиса**
-![Ответ сервиса](docs/screenshots/swagger_response.png)
+**Support — не могу войти в аккаунт**
+![Support запрос](docs/screenshots/swagger_support.png)
+
+**Complaint — жалоба на сервис**
+![Complaint запрос](docs/screenshots/swagger_complaint.png)
 
 **Запись в базе данных**
 ![Запись в БД](docs/screenshots/db_record.png)
