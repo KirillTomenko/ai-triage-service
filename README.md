@@ -68,7 +68,8 @@ GPT-4o-mini
 SQLite Audit Log
       │
       ▼
-JSON Response``` 
+JSON Response
+``` 
 
 ---
 
