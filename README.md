@@ -179,7 +179,7 @@ docker compose up --build
 
 ## Демо
 
-🎥 [Демо-видео: запрос → ответ → запись в БД](ССЫЛКА_НА_ВИДЕО)
+🎥 [Демо-видео: запрос → ответ → запись в БД](https://drive.google.com/file/d/1gjiH8ImVTaSh5gks-9raIzkA2geK34EO/view?usp=sharing)
 
 **Billing — двойное списание**
 ![Billing запрос](docs/screenshots/swagger_billing.png)
