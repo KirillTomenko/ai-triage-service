@@ -204,3 +204,24 @@ docker compose up --build
 - OpenAI SDK → ProxyAPI (gpt-4o-mini, temperature=0.2)
 - aiosqlite · pydantic-settings
 - Docker / docker-compose
+
+---
+
+## Design Decisions
+
+Для MVP выбраны следующие решения:
+
+- SQLite вместо PostgreSQL для упрощения запуска;
+- In-memory rate limiter вместо Redis;
+- GPT-4o-mini как компромисс между стоимостью и качеством;
+- Fallback-механизм для исключения потери обращений.
+
+---
+
+## Future Improvements
+
+- PostgreSQL
+- Redis rate limiter
+- RAG knowledge base
+- Admin dashboard
+- Prometheus + Grafana
